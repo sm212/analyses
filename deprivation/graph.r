@@ -29,13 +29,13 @@ arrows = data.frame(x = c(-1),
                     yend = c(-0.5),
                     curvature = c(-0.4))
   
-plot_df = imd %>%
+df_plot = imd %>%
   left_join(constituency_info, by = c('constituency' = 'constituency_name')) %>%
   mutate(decile = ntile(imd_19, 10)) %>%
   arrange(imd_19)
 
-ggplot(plot_df, aes(x = decile, y = -1)) +
-  geom_bar(fill = plot_df$party_colour, stat = 'identity', 
+ggplot(df_plot, aes(x = decile, y = -1)) +
+  geom_bar(fill = df_plot$party_colour, stat = 'identity', 
            position = 'stack', colour = 'black', width = 0.8) +
   geom_text(aes(x = x, y = y, label = label), df_colnum, 
             fontface = 'bold') +
