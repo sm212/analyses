@@ -12,4 +12,6 @@ This repo contains code to :
 # Output
 
 Running `graph.r` recreates Alasdair's original visualisation:
-<img src="constituency_deprivation.png" height="50%" width="50%">
+<center>
+	<img src="constituency_deprivation.png" height="50%" width="50%">
+</center>
