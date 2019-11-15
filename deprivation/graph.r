@@ -11,7 +11,7 @@ df_colnum = data.frame(x = 1:10, y = 1, label = 1:10)
 df_leftnums = data.frame(x = 0.5, y = -(1:22), label = 1:22, 
                          alpha = 1 / (1:22))
 df_rightnums = data.frame(x = 10.75, y = seq(-53, -32, by = 1), 
-                          label = seq(532, 511, by = -1), alpha = 1 / (1:22))
+                          label = seq(533, 511, by = -1), alpha = 1 / (1:22))
 
 # Annotation & arrow dataframes
 annotations = data.frame(x = c(-2, -1.2, -1.1, -1.2, 11.2, 11.2),
