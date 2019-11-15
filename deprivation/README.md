@@ -13,7 +13,10 @@ This repo contains code to :
 
 Running `graph.r` recreates Alasdair's original visualisation:
 <center>
-	<img src="constituency_deprivation.png" height="50%" width="50%">
+	<img src="./img/constituency_deprivation.png" height="50%" width="50%">
 </center>
 
-Running `comparison.r` outputs a graph showing the distribution of scores for each deprivation domain. The Essex constituencies are highlighted in blue, and Clacton is highlighted in orange:
+Running `clacton.r` outputs a graph showing the distribution of scores for each deprivation domain. The Essex constituencies are highlighted in blue, and Clacton is highlighted in orange:
+<center>
+	<img src="./img/clacton_idaci.png" height="50%" width="50%">
+</center>
