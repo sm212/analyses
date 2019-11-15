@@ -10,11 +10,11 @@ constituency_info = bes_2017 %>%
 df_colnum = data.frame(x = 1:10, y = 1, label = 1:10)
 df_leftnums = data.frame(x = 0.5, y = -(1:22), label = 1:22, 
                          alpha = 1 / (1:22))
-df_rightnums = data.frame(x = 10.7, y = seq(-53, -32, by = 1), 
-                          label = seq(553, 532, by = -1), alpha = 1 / (1:22))
+df_rightnums = data.frame(x = 10.75, y = seq(-53, -32, by = 1), 
+                          label = seq(532, 511, by = -1), alpha = 1 / (1:22))
 
 # Annotation & arrow dataframes
-annotations = data.frame(x = c(-2, -1.2, -1.1, -1.2, 11.1, 11.1),
+annotations = data.frame(x = c(-2, -1.2, -1.1, -1.2, 11.2, 11.2),
                          y = c(-5, -20.5, -45.5, -50, -45.5, -52.5),
                          label = c('Walton\n(Liverpool)\nMost\ndeprived\nconstituency\nin England',
                                    'Walsall\nNorth',
@@ -65,4 +65,5 @@ ggplot(df_plot, aes(x = decile, y = -1)) +
         plot.title = element_text(face = 'bold', hjust = 0.5),
         plot.subtitle = element_text(face = 'bold', hjust = 0.5))
 
-ggsave('constituency_deprivation.png', height = 8, width = 6, units = 'in')
+ggsave('./img/constituency_deprivation.png', 
+       height = 8, width = 6, units = 'in')
